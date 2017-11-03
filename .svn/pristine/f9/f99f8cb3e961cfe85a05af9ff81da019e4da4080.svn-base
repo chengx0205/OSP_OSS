@@ -1,0 +1,26 @@
+package com.richinfo.student.test;
+
+import java.util.List;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.richinfo.pojo.Student;
+import com.richinfo.service.StudentService;
+import com.richinfo.service.impl.StudentServiceImpl;
+
+public class StudentTest {
+
+	@Test
+	public void testStudent() {
+		String conf = "spring-mybatis.xml";
+		ApplicationContext ac = 
+				new ClassPathXmlApplicationContext(conf);
+		StudentService ss = ac.getBean(StudentServiceImpl.class);
+		List<Student> students = ss.findAllStudent();
+		for(Student stu : students) {
+			System.out.println(stu);
+		}
+	}
+}

@@ -1,0 +1,44 @@
+body { font:12px/22px Verdana, Geneva, sans-serif; background:#fff; color:#333; }
+body,p,ul,ol,li,dl,dt,dd,input,h1,h2,h3,h4,form,hr { padding:0; margin:0; }
+img { border:0; }
+table {
+}
+input {	font-size:9px;}
+label { display:inline-block; padding-top:1px; }
+label input { border:0; line-height:20px; padding:0px 10px; overflow:visible; color:#fff; }
+label.ui-green { background:#98c286; border:1px solid #3b6e22; }
+label.ui-green input { background:#68a54c; }
+label.ui-blue { background:#8a9cc2; border:1px solid #29447e; }
+label.ui-blue input { background:#5e77aa; }
+ul { list-style:none;}
+a:link, a:visited { color:#3a52a8; text-decoration:none; }
+a:hover, a:active { color:#3a52a8; text-decoration:underline; }
+.bold { font-weight:bold;}
+.hide { display:none;}
+.show { display:block;}
+.clear { clear:both; }
+.text-center { text-align:center; }
+.spacer { height:8px; overflow:hidden; }
+/* clearFix */
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:inline-block}
+.clearfix{display:block; float:right;}
+.wrap { width:960px; margin:0 auto; }
+#header { overflow:hidden; padding-top:10px;}
+#header #logo { float:left; width:120px; text-align:center;}
+#header .help { float:right;}
+#header .help a { margin:0 5px; }
+#header .help a.shopping { padding-left:18px; background:url(../images/bg1.png) left -69px no-repeat; }
+#header .navbar { padding-left:120px; margin-top:30px; }
+#header .navbar li {float:left; display:inline; margin:0 3px; background-color:#eee; padding-right:20px; border:1px solid #CCC;;}
+#header .navbar li a { display:block; word-spacing:5px; letter-spacing:2px; background-color:#eee;padding-left:20px; padding-top:4px; line-height:26px; font-size:13px; font-weight:bold; color:#105f4b; text-decoration:none; }
+#header .navbar li.current { background-position:right top; padding-right:15px;}
+#header .navbar li.current a { background-position:left top; color:blue; padding-left:15px; font-size:15px;}
+#header .navbar li a {font-size:13px;}
+#childNav {clear:both; height:30px; background-color:#EEE;overflow:hidden;}	
+#childNav .wrap #myclock{display:block;word-spacing:5px;}
+#index{width:960px; margin:0 auto; border:1px solid orange;height:500px;}
+#index_left{ float:left;width:260px;height:500px; border:1px solid orange;}
+#index_right{float:right;width:696px;height:500px; border:1px solid orange;}
+#index_left #tree ul li{margin-left:10px;width:200px;}
+.code{padding-left:30px;}

@@ -1,0 +1,26 @@
+package com.richinfo.service.impl;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;
+
+import com.richinfo.dao.StudentDao;
+import com.richinfo.pojo.Student;
+import com.richinfo.service.StudentService;
+
+@Service
+public class StudentServiceImpl implements StudentService{
+
+	@Resource
+	private StudentDao studentDao;
+	
+	
+	public List<Student> findAllStudent() {
+		List<Student> students = studentDao.findAllStudent();
+		return students;
+	}
+
+	
+}

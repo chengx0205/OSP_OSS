@@ -1,0 +1,10 @@
+package com.richinfo.service;
+
+import java.util.List;
+
+import com.richinfo.pojo.Student;
+
+public interface StudentService {
+
+	public List<Student> findAllStudent();
+}

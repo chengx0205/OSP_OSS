@@ -1,0 +1,29 @@
+package com.richinfo.controller;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.richinfo.pojo.Student;
+import com.richinfo.service.StudentService;
+
+@Controller
+@RequestMapping("/student")
+public class StudentController {
+
+	@Resource
+	private StudentService studentService;
+	
+	@RequestMapping("/showStudent")
+	public String studentCtrl(Model model) {
+		List<Student> students = studentService.findAllStudent();
+	    model.addAttribute("student", students);
+//	    model.addAllAttributes(students);
+//		System.out.println("11111");
+		return "student";
+	}
+}
